@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edison Alvarado Sanay | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#0284c7',
+                        accent: '#f59e0b',
+                        dark: '#1f2937',
+                        light: '#f9fafb'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans leading-relaxed">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-primary tracking-wide">Edison A. Sanay</a>
+            <button id="menu-btn" class="md:hidden text-dark focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+            <div id="nav-links" class="hidden md:flex space-x-6 font-medium">
+                <a href="#about" class="hover:text-secondary transition">About</a>
+                <a href="#skills" class="hover:text-secondary transition">Skills</a>
+                <a href="#experience" class="hover:text-secondary transition">Experience</a>
+                <a href="#education" class="hover:text-secondary transition">Education</a>
+                <a href="#contact" class="hover:text-secondary transition">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden bg-white border-t px-4 py-2 flex flex-col space-y-2 md:hidden">
+            <a href="#about" class="block py-2 hover:text-secondary">About</a>
+            <a href="#skills" class="block py-2 hover:text-secondary">Skills</a>
+            <a href="#experience" class="block py-2 hover:text-secondary">Experience</a>
+            <a href="#education" class="block py-2 hover:text-secondary">Education</a>
+            <a href="#contact" class="block py-2 hover:text-secondary">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about" class="bg-gradient-to-r privacy bg-primary text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="w-44 h-44 rounded-full border-4 border-white overflow-hidden bg-white shadow-lg flex-shrink-0">
+                <i class="fa-solid fa-user-tie text-gray-300 w-full h-full flex items-center justify-center text-8xl mt-4"></i>
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-2">Edison Alvarado Sanay</h1>
+                <p class="text-xl text-sky-200 font-medium mb-4">Licensed Professional Teacher (LPT) | Data Specialist | Content Creator</p>
+                <p class="text-gray-100 max-w-2xl mb-6">
+                    A highly versatile professional leveraging a distinct blend of expertise in education, large-scale statistical field research, data analysis, and high-impact digital multimedia strategy. 
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-accent hover:bg-yellow-500 text-dark font-bold px-6 py-2.5 rounded-lg shadow transition">Get In Touch</a>
+                    <a href="https://ph.linkedin.com/in/edison-sanay-bb5232290" target="_blank" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2.5 rounded-lg font-medium flex items-center gap-2 transition">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="py-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Core Competencies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                <div class="text-secondary text-3xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3 class="text-xl font-bold mb-3">Data Collection & Analysis</h3>
+                <p class="text-gray-600 text-sm">Highly skilled in large-scale field data collection, mobile survey systems (CAPI), geotagging, questionnaire quality control, and strict compliance with the Data Privacy Act (RA 10173).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-accent">
+                <div class="text-accent text-3xl mb-4"><i class="fa-solid fa-video"></i></div>
+                <h3 class="text-xl font-bold mb-3">Digital Multimedia Strategy</h3>
+                <p class="text-gray-600 text-sm">Proficient in end-to-end short-form vertical video production (CapCut, Canva), mobile analytics tracking, trend forecasting, and driving organic social platform audience growth.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-primary">
+                <div class="text-primary text-3xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="text-xl font-bold mb-3">Instruction & Class Management</h3>
+                <p class="text-gray-600 text-sm">Expertise in diagnostic student assessments, tailored lesson plan facilitation, remedial reading/numeracy development, classroom organization, and strong DepEd record-keeping practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="max-w-4xl mx-auto border-gray-200">
+
+    <section id="experience" class="py-16 max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Professional Experience</h2>
+        
+        <div class="space-y-12">
+            <div class="relative pl-6 border-l-2 border-secondary">
+                <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold text-gray-800">Content Creator & Multimedia Strategist</h3>
+                    <span class="text-sm bg-blue-50 text-secondary px-3 py-1 rounded-full font-medium mt-1 sm:mt-0">April 2020 - Present</span>
+                </div>
+                <p class="text-sm font-semibold text-gray-500 mb-3"><i class="fa-brands fa-tiktok text-black mr-1"></i> TikTok Strategy Platform</p>
+                <ul class="list-disc list-inside space-y-1.5 text-gray-600 text-sm">
+                    <li>Grew an organic audience framework to over 17,200 followers and 879,000+ total likes through premium high-value storytelling formats.</li>
+                    <li>Executed targeted analytic modifications increasing overall audience content completion rates by 25%.</li>
+                    <li>Managed end-to-end processing with visual campaigns hitting individual peak reach numbers of over 4.6 Million views.</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-secondary">
+                <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold text-gray-800">Statistical Researcher</h3>
+                    <span class="text-sm bg-blue-50 text-secondary px-3 py-1 rounded-full font-medium mt-1 sm:mt-0">Sept 2024 - Oct 2024</span>
+                </div>
+                <p class="text-sm font-semibold text-gray-500 mb-3"><i class="fa-solid fa-building-columns mr-1"></i> Philippine Statistics Authority (PSA)</p>
+                <ul class="list-disc list-inside space-y-1.5 text-gray-600 text-sm">
+                    <li>Administered standardized FLEMMS structural profile assessments to evaluate core provincial literacy, media exposure, and educational frameworks.</li>
+                    <li>Maintained ironclad compliance layout rules supporting local data security directives under RA 10625 and RA 10173.</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-secondary">
+                <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold text-gray-800">Enumerator</h3>
+                    <span class="text-sm bg-blue-50 text-secondary px-3 py-1 rounded-full font-medium mt-1 sm:mt-0">Jul 2024 - Sept 2024</span>
+                </div>
+                <p class="text-sm font-semibold text-gray-500 mb-3"><i class="fa-solid fa-building-columns mr-1"></i> Philippine Statistics Authority (PSA)</p>
+                <ul class="list-disc list-inside space-y-1.5 text-gray-600 text-sm">
+                    <li>Conducted direct household profile assessments leveraging tablet-integrated computerized mapping data workflows and precise geotagging architectures.</li>
+                    <li>Coordinated structured multi-agency alignment data consents across sensitive local cross-demographics sections.</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-secondary">
+                <div class="absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold text-gray-800">Teacher's Assistant (Part-Time)</h3>
+                    <span class="text-sm bg-blue-50 text-secondary px-3 py-1 rounded-full font-medium mt-1 sm:mt-0">Nov 2015 - Nov 2016</span>
+                </div>
+                <p class="text-sm font-semibold text-gray-500 mb-3"><i class="fa-solid fa-school mr-1"></i> Pawican Elementary School (DepEd)</p>
+                <ul class="list-disc list-inside space-y-1.5 text-gray-600 text-sm">
+                    <li>Collaborated on structural lesson planning tracks across mixed elementary subjects, delivering specialized target reading and basic numeracy interventions.</li>
+                    <li>Managed core DepEd class records configurations, grading matrices, and localized asset development workflows for groups containing over 40+ students.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Education & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm flex gap-4">
+                    <div class="text-primary text-2xl mt-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <span class="text-xs font-bold text-accent tracking-wider uppercase">Graduated 2019</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-1">Bachelor in Elementary Education</h3>
+                        <p class="text-sm text-gray-600">Cataingan Municipal School</p>
+                        <p class="text-xs font-semibold text-gray-500 mt-2">Rating: 86% | Certificate for Employment</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex gap-4">
+                    <div class="text-primary text-2xl mt-1"><i class="fa-solid fa-certificate"></i></div>
+                    <div>
+                        <span class="text-xs font-bold text-accent tracking-wider uppercase">Completed 2016</span>
+                        <h3 class="text-lg font-bold text-gray-800 mt-1">Computer System Servicing</h3>
+                        <p class="text-sm text-gray-600">Sower Institute of Technology (TESDA)</p>
+                        <p class="text-xs font-semibold text-gray-500 mt-2">Status: Passed | National Certificate II (NC2)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-primary mb-4">Let's Connect</h2>
+        <p class="text-gray-600 max-w-xl mx-auto mb-10">Available for professional opportunities in academic instruction, field statistical analysis consulting, and digital content optimization spaces.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <i class="fa-solid fa-envelope text-secondary text-xl mb-2"></i>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Email</p>
+                <a href="mailto:innocenceint@gmail.com" class="text-sm font-medium text-primary block mt-1 break-all">innocenceint@gmail.com</a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <i class="fa-solid fa-phone text-secondary text-xl mb-2"></i>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Contact Number</p>
+                <a href="tel:+639486825358" class="text-sm font-medium text-primary block mt-1">09486825358 / +639486825358</a>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <i class="fa-solid fa-location-dot text-secondary text-xl mb-2"></i>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Location</p>
+                <p class="text-sm font-medium text-gray-700 mt-1">Palanas, Masbate, PH 5404</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 Edison Alvarado Sanay. All rights reserved.</p>
+        <p class="text-xs text-gray-600 mt-1">Licensed Professional Teacher (LPT)</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close dropdown when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
